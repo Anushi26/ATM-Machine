@@ -67,7 +67,7 @@ public class ATMSystem {
         int enteredPin = sc.nextInt();
 
         if (!atm.verifyPin(enteredPin)) {
-            System.out.println("❌ Incorrect PIN. Exiting...");
+            System.out.println(" Incorrect PIN. Exiting...");
             return;
         }
 
@@ -107,4 +107,5 @@ public class ATMSystem {
         sc.close();
     }
 }
+
 
