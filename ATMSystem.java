@@ -55,7 +55,7 @@ public class ATMSystem {
 
         // Check if pin has exactly 4 digits
         if (pin < 1000 || pin > 9999) {
-            System.out.println("❌ Wrong PIN entered. Must be 4 digits.");
+            System.out.println(" Wrong PIN entered. Must be 4 digits.");
             return; // exit program
         }
 
@@ -97,7 +97,7 @@ public class ATMSystem {
                     atm.withdraw(withdrawAmount);
                     break;
                 case 4:
-                    System.out.println("✅ Thank you for using the ATM!");
+                    System.out.println("Thank you for using the ATM!");
                     break;
                 default:
                     System.out.println("Invalid choice! Try again.");
@@ -107,3 +107,4 @@ public class ATMSystem {
         sc.close();
     }
 }
+
